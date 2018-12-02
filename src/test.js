@@ -41,4 +41,25 @@
     expect(str_arr.join(' ')).toEqual('my first test string array');
   });
 
+  test('test_compare_operators', () => {
+    expect(1 == 1).toEqual(true);
+    expect("1" == 1).toEqual(true)
+    expect(3 == 5).toEqual(false);
+    expect(0 == false).toEqual(true);
+    expect("bar" == "bor").toEqual(false);
+    expect(11 != 12).toEqual(true);
+    expect(11 != "11").toEqual(false);
+    expect(33 === 33).toEqual(true);
+    expect(33 === "23").toEqual(false);
+    expect(3 !== '3').toEqual(true);
+    expect(4 > 4).toEqual(false);
+    expect(4 < 4).toEqual(false);
+    expect(21 >= 21).toEqual(true);
+    expect(21 >= 22).toEqual(false);
+    expect(21 <= 21).toEqual(true);
+    expect(21 <= 20).toEqual(false);
+  });
 
+  /*test('test_equality_comparison_algorithm', () => {
+    expect().toEqual();
+  });*/
