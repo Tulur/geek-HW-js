@@ -1,7 +1,5 @@
   'use strict';
 
-  // String
-
   let str_arr = ['my', 'first', 'test', 'string', 'array'],
       str = 'write tests for courses',
       arr = 'arr'
@@ -20,3 +18,15 @@
     expect(str.replace('write','string') ).toEqual('string tests for courses');
     // expect(str.split(" ") ).toEqual( [arr ,'string']);   ?????
   });
+
+  let number = 101
+  test('Numbers', () => {
+    expect(21).toEqual(21);
+    expect(false).toEqual(false);
+    expect(Math.pow(3, 3)).toEqual(27);
+    expect(25 + "25").toEqual("2525");
+    expect(Number.isFinite(number)).toEqual(true);
+    expect(Number.isInteger(number*101)).toEqual(true);
+  });
+
+
