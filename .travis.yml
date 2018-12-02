@@ -8,7 +8,7 @@
   before_install:
   - npm update
   install:
-  - package.json
+  - cd package.json
   - npm install
   script:
   - npm test
