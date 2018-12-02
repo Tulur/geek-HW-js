@@ -29,4 +29,16 @@
     expect(Number.isInteger(number*101)).toEqual(true);
   });
 
+  test('test_arrays', () => {
+    str_arr.push('GeekHub');
+    expect(str_arr.length).toEqual(6);
+
+    str_arr.pop();
+    expect(str_arr.length).toEqual(5);
+
+    expect(str_arr.join()).toEqual('my,first,test,string,array');
+
+    expect(str_arr.join(' ')).toEqual('my first test string array');
+  });
+
 
