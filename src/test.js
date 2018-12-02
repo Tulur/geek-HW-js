@@ -60,6 +60,14 @@
     expect(21 <= 20).toEqual(false);
   });
 
-  /*test('test_equality_comparison_algorithm', () => {
-    expect().toEqual();
-  });*/
+  test('test_equality_comparison_algorithm', () => {
+    expect(null + undefined).toEqual(NaN);
+    expect(null != 1).toEqual(true);
+    expect(false - true).toEqual(-1);
+    expect('true' == true).toEqual(false);
+    expect('false' === false ).toEqual(false);
+    expect(0 == '0').toEqual(true);
+    expect(0 === "0").toEqual(false);
+    expect(null === undefined).toEqual(false);
+    // expect().toEqual();
+  });
